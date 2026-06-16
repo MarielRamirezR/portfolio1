@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout App | Mariel Ramirez</title>
+    <meta
+      name="description"
+      content="Valvoline Checkout App case study by Mariel Ramirez, covering POS redesign, UX research, and design system documentation."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="case-body">
+    <header class="site-header">
+      <a class="logo" href="index.html" aria-label="Mariel Ramirez home">
+        <img src="assets/mariel-avatar.jpg" alt="" />
+      </a>
+      <nav class="top-nav" aria-label="Primary navigation">
+        <a href="index.html#work" aria-current="page">Work</a>
+        <a href="speaking.html">Speaking</a>
+        <a href="recognitions.html">Recognitions</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="social-links" aria-label="Social links">
+        <a class="icon-link" href="mailto:mariel.ramirezrom@gmail.com" aria-label="Email Mariel">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16v11H4z"/><path d="m4.5 7 7.5 6 7.5-6"/></svg>
+        </a>
+        <a class="icon-link" href="https://www.tiktok.com/@soymarielramirez" target="_blank" rel="noreferrer" aria-label="Mariel on TikTok">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4v10.2a4.2 4.2 0 1 1-3.4-4.1"/><path d="M14 4c.8 3.1 2.5 4.8 5.5 5.3"/></svg>
+        </a>
+        <a class="icon-link" href="https://www.linkedin.com/in/mariel-ramirez/" target="_blank" rel="noreferrer" aria-label="Mariel on LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 10v8"/><path d="M6.5 6.5v.1"/><path d="M11 18v-8"/><path d="M11 13.5c0-2.2 1.3-3.7 3.4-3.7 2 0 3.1 1.3 3.1 3.7V18"/></svg>
+        </a>
+      </div>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="sr-only">Open navigation</span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+      <a href="index.html#work">Work</a>
+      <a href="speaking.html">Speaking</a>
+      <a href="recognitions.html">Recognitions</a>
+      <a href="about.html">About</a>
+      <a href="https://www.linkedin.com/in/mariel-ramirez/" target="_blank" rel="noreferrer">LinkedIn</a>
+      <a href="https://www.tiktok.com/@soymarielramirez" target="_blank" rel="noreferrer">TikTok</a>
+    </nav>
+
+    <main>
+      <section class="case-study-section case-study-page case-redesign" id="checkout-case-study" aria-labelledby="checkout-case-title">
+        <div class="case-study-header case-study-hero">
+          <div>
+            <p class="project-eyebrow">Valvoline Instant Oil Change</p>
+            <h1 id="checkout-case-title">Checkout Experience Redesign and Design System Creation</h1>
+            <p>
+              A standalone checkout app designed as part of Valvoline’s transition from a monolithic POS system into smaller,
+              scalable product experiences for store teams.
+            </p>
+          </div>
+        </div>
+
+        <div class="case-hero-card">
+          <img src="assets/checkout-hero-square.png" alt="Valvoline checkout app interface mockups" />
+        </div>
+
+        <div class="case-layout">
+          <nav class="case-nav" aria-label="Checkout case study sections">
+            <a href="#overview">Overview</a>
+            <a href="#problem">Problem</a>
+            <a href="#collaboration">Collaboration</a>
+            <a href="#role">Role</a>
+            <a href="#tools">Tools</a>
+            <a href="#process">Process</a>
+            <a href="#learnings">Learnings</a>
+            <a href="#demo">Demo</a>
+          </nav>
+
+          <div class="case-story">
+          <section class="case-content-row" id="overview">
+            <div class="case-section-label">
+              <span>01</span>
+              <h2>Project Overview</h2>
+            </div>
+            <div class="case-copy">
+              <p>
+                Valvoline, known for its high-quality automotive lubricants and Valvoline Instant Oil Change services,
+                started breaking down its old monolithic system into smaller, standalone apps to work more efficiently.
+              </p>
+              <p>
+                I was part of one of the first projects in this transformation, focusing on the Checkout app. This effort
+                was designed to help all Valvoline stores improve the services provided to customers.
+              </p>
+              <p>
+                Since this was the first project, we also had to focus on atomic design to begin creating a Design System
+                that would be used across all the apps.
+              </p>
+            </div>
+          </section>
+
+          <section class="case-content-row" id="problem">
+            <div class="case-section-label">
+              <span>02</span>
+              <h2>The Problem</h2>
+            </div>
+            <div class="case-copy">
+              <p>
+                The primary challenge was that the monolithic POS system had a rigid, step-by-step process that made
+                navigating between steps cumbersome for users. For the new standalone Checkout app, the focus was on
+                designing an initial version that prioritized essential functionality while maintaining compatibility with
+                the monolith for the first release.
+              </p>
+              <p>
+                The key UX challenges included aligning features with user needs, defining clear requirements, and
+                improving the flow without overhauling the existing navigation, ensuring a smoother and more intuitive
+                experience.
+              </p>
+            </div>
+          </section>
+
+          <section class="case-content-row" id="collaboration">
+            <div class="case-section-label">
+              <span>03</span>
+              <h2>Team Collaboration</h2>
+            </div>
+            <div class="case-copy">
+              <p>Around 30 stakeholders were involved in this project, including:</p>
+              <ul class="case-list compact-list">
+                <li>Product Managers</li>
+                <li>Business Analysts</li>
+                <li>Project Managers</li>
+                <li>Delivery Managers</li>
+                <li>Visual Designer</li>
+                <li>Front-end and Back-end Developers</li>
+                <li>QA Engineers</li>
+                <li>SRE Engineers</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="case-content-row" id="role">
+            <div class="case-section-label">
+              <span>04</span>
+              <h2>My Role</h2>
+            </div>
+            <div class="case-copy">
+              <p>
+                As a <strong>Product Designer and UX Researcher</strong>, I was responsible for understanding the pain
+                points store managers faced during the checkout experience, wireframing the solution and ensuring the
+                designs met both user and business needs.
+              </p>
+              <ul class="case-list">
+                <li>Defining the UX Design Strategy.</li>
+                <li>Conducting user research and interviews with store managers.</li>
+                <li>Creating low, mid and hi-fidelity screens along with my visual design peer.</li>
+                <li>Collaborating on the design strategy and documentation for a new design system used across multiple apps.</li>
+                <li>Validating designs through user testing and design critiques, iterating concepts based on feedback.</li>
+                <li>Aligning with developers on the feasibility of some of the features.</li>
+              </ul>
+              <p>
+                While I worked closely with my peer, a visual designer, to ensure visual consistency, my focus was
+                primarily on research, strategy, and documentation.
+              </p>
+            </div>
+          </section>
+
+          <section class="case-content-row" id="tools">
+            <div class="case-section-label">
+              <span>05</span>
+              <h2>Tools and Software</h2>
+            </div>
+            <div class="case-copy">
+              <div class="tool-list" aria-label="Tools used">
+                <span>Figma</span>
+                <span>Storybook</span>
+                <span>Confluence</span>
+                <span>Jira</span>
+                <span>Azure DevOps</span>
+                <span>UserTesting</span>
+                <span>Maze</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="case-content-row process-row" id="process">
+            <div class="case-section-label">
+              <span>06</span>
+              <h2>Design Process</h2>
+            </div>
+            <div class="case-copy process-stack">
+              <article class="process-step">
+                <div class="step-heading">
+                  <span>1</span>
+                  <h3>Understanding User and Business Needs</h3>
+                </div>
+                <p>
+                  To ensure we were solving the right problems, we started by gathering insights from key stakeholders
+                  and store managers.
+                </p>
+                <ul class="case-list">
+                  <li>Interviews with store managers to understand pain points in the existing checkout process.</li>
+                  <li>Mapping out the AS-IS process.</li>
+                  <li>Competitive analysis to identify industry best practices for checkout.</li>
+                  <li>
+                    Ideation workshops to map out the ideal experience, drawing from both web-based models like Amazon
+                    and physical checkout models like Walmart.
+                  </li>
+                </ul>
+                <p>We synthesized this information to define the most critical user needs and business goals.</p>
+                <figure class="case-figure">
+                  <img src="assets/checkout-process-step-1.png" alt="Research boards, benchmark analysis, and checkout wireframes" />
+                </figure>
+              </article>
+
+              <article class="process-step">
+                <div class="step-heading">
+                  <span>2</span>
+                  <h3>Define and Ideate</h3>
+                </div>
+                <p>
+                  With insights in hand, we began ideating and designing wireframes to address user pain points while
+                  maintaining some aspects of the existing system. The key goals were:
+                </p>
+                <ul class="case-list">
+                  <li>Keep existing navigation for consistency and familiarity.</li>
+                  <li>Streamline key features such as discounts, payment methods, and error handling.</li>
+                  <li>Simplify user flows by focusing on the most essential actions.</li>
+                </ul>
+                <figure class="case-figure">
+                  <img src="assets/checkout-process-step-2.png" alt="Header analysis, discounts flow, checkout actions flow, and appendix boards" />
+                </figure>
+                <div class="case-note-card">
+                  <p>We created a roadmap and prioritized the work into three main steps of the checkout process:</p>
+                  <ol>
+                    <li><strong>Review Cart</strong> - Allow users to view in detail the selected services.</li>
+                    <li><strong>Select Payment Method</strong> - Streamline payment options and add contact information.</li>
+                    <li><strong>Complete Transaction</strong> - Provide a confirmation screen with the option to print the invoice.</li>
+                  </ol>
+                </div>
+                <div class="case-gallery">
+                  <figure class="case-figure">
+                    <img src="assets/checkout-roadmap.png" alt="Checkout happy path and prioritized roadmap" />
+                  </figure>
+                  <p>
+                    Several wireframes were designed to map out the main checkout screens and flows. We had feedback
+                    sessions with key stakeholders.
+                  </p>
+                  <figure class="case-figure">
+                    <img src="assets/checkout-wireframes.png" alt="Low-fidelity checkout wireflows and main checkout screens" />
+                  </figure>
+                  <p>
+                    Once the wireframes were aligned with stakeholder feedback, we moved to design the mid and
+                    high-fidelity screens.
+                  </p>
+                  <figure class="case-figure">
+                    <img src="assets/checkout-process-high-fidelity.png" alt="Mid and high-fidelity checkout screens" />
+                  </figure>
+                  <p>
+                    While finalizing the user flows for each step, we were simultaneously designing, writing user
+                    stories, and developing the design system components with the front-end team.
+                  </p>
+                  <figure class="case-figure">
+                    <img src="assets/checkout-process-design-system.png" alt="Design system components and documentation for checkout" />
+                  </figure>
+                </div>
+              </article>
+
+              <article class="process-step split-step">
+                <div>
+                  <div class="step-heading">
+                    <span>3</span>
+                    <h3>Prototype and Test</h3>
+                  </div>
+                  <p>
+                    I created the research plan and then we created interactive prototypes for both tablet and web
+                    versions of the checkout flow.
+                  </p>
+                </div>
+                <div class="case-note-card">
+                  <p>These prototypes allowed us to:</p>
+                  <ul class="case-list">
+                    <li>Test the core features, interactions, and key user flows for the first release.</li>
+                    <li>Validate the design with store employees through usability testing.</li>
+                  </ul>
+                  <p>
+                    Through this user research, we gathered valuable feedback and made adjustments to improve usability,
+                    particularly around complex areas like discounts and error messages.
+                  </p>
+                </div>
+              </article>
+
+              <article class="process-step split-step">
+                <div>
+                  <div class="step-heading">
+                    <span>4</span>
+                    <h3>Iterate and Finalize</h3>
+                  </div>
+                  <p>
+                    Based on feedback from initial tests, we iterated some screens and added the latest requirements. We
+                    conducted additional user research with both in-store users and customers who observe the screen while
+                    waiting for services.
+                  </p>
+                </div>
+                <div class="case-note-card">
+                  <p>This allowed us to:</p>
+                  <ul class="case-list">
+                    <li>Finalize and validate the overall user flows.</li>
+                    <li>Ensure that the design met the needs of both store managers and customers.</li>
+                    <li>Identify any final tweaks before development.</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="process-step">
+                <div class="step-heading">
+                  <span>5</span>
+                  <h3>Handoff and Collaboration</h3>
+                </div>
+                <p>
+                  Once the designs were validated, I collaborated closely with the product managers, development team, and
+                  design team to ensure proper documentation of interactions and flows based on user stories, plus
+                  seamless implementation.
+                </p>
+                <figure class="case-figure">
+                  <img src="assets/checkout-process-handoff.png" alt="Checkout handoff documentation with annotated screens and components" />
+                </figure>
+              </article>
+            </div>
+          </section>
+
+          <section class="case-content-row" id="learnings">
+            <div class="case-section-label">
+              <span>07</span>
+              <h2>Key Learnings</h2>
+            </div>
+            <div class="case-copy">
+              <p>
+                Working with multiple stakeholders and managing several projects simultaneously for Valvoline helped me
+                refine my design process and approach to different outcomes.
+              </p>
+              <p>
+                The experience of working on both the redesign of the Checkout App and the Design System at the same time
+                was particularly valuable. It allowed me to demonstrate and improve various skills, from UX facilitation
+                and defending design decisions to understanding the development implications for each component of the
+                design system.
+              </p>
+              <p>
+                Although there is still room for improvement in the Checkout App, it was rewarding to lay the groundwork
+                for future iterations, especially since this was just the first release.
+              </p>
+              <p>
+                I thoroughly enjoyed applying my project management, research, teamwork and visual design skills, the
+                latter being supported by my talented visual design peer.
+              </p>
+            </div>
+          </section>
+
+          <section class="case-content-row demo-row" id="demo">
+            <div class="case-section-label">
+              <span>08</span>
+              <h2>Demo</h2>
+            </div>
+            <div class="case-copy">
+              <div class="demo-video">
+                <video controls preload="metadata" src="assets/checkout-demo.mov">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div>
+        <p class="kicker">Let’s connect</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/mariel-ramirez/" target="_blank" rel="noreferrer" aria-label="Mariel on LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 10v8"/><path d="M6.5 6.5v.1"/><path d="M11 18v-8"/><path d="M11 13.5c0-2.2 1.3-3.7 3.4-3.7 2 0 3.1 1.3 3.1 3.7V18"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@soymarielramirez" target="_blank" rel="noreferrer" aria-label="Mariel on TikTok">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4v10.2a4.2 4.2 0 1 1-3.4-4.1"/><path d="M14 4c.8 3.1 2.5 4.8 5.5 5.3"/></svg>
+        </a>
+      </div>
+      <p class="copyright">Made with love and AI in 2026 · Mariel Ramirez</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
